@@ -18,7 +18,8 @@ int main() {
         int nbArgent;
         int nbBronze;
         // A compléter, affichage de la première ligne du tableau
-        cout << "+" << setfill('-') << setw(18) << "+" << setfill(' ') << endl;
+
+        cout << "+" << setfill('-') << setw(18) << "+" << pays << setfill(' ') << endl;
         do
         {
             //récupération des valeurs
@@ -33,6 +34,7 @@ int main() {
         } while (!leFichier.eof());
         cout << "+" << setfill('-') << setw(18) << "+" << setfill(' ') << endl;
         // A compléter, affichage de la dernière ligne du tableau.
+
 
     }
     leFichier.close();
