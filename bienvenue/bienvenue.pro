@@ -9,5 +9,6 @@ SOURCES += \
 HEADERS +=
 
 DISTFILES += \
+    build/Desktop_Qt_6_12_0-Debug/config.txt \
     build/Desktop_Qt_6_12_0-Debug/medailles.txt  \
     medailles1.txt

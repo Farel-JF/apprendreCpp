@@ -1,0 +1,53 @@
+\doxysection{Zone\+Arrosage Class Reference}
+\hypertarget{classZoneArrosage}{}\label{classZoneArrosage}\index{ZoneArrosage@{ZoneArrosage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classZoneArrosage_a9fc3fbb127b51d30dcc14964057bdc48}{Zone\+Arrosage}} (int \+\_\+num\+Zone, const gpio\+\_\+num\+\_\+t \+\_\+commande\+Vanne, const gpio\+\_\+num\+\_\+t \+\_\+sense\+AVanne, const gpio\+\_\+num\+\_\+t \+\_\+sense\+BVanne, const gpio\+\_\+num\+\_\+t \+\_\+broche\+Humidite)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{classZoneArrosage}{Zone\+Arrosage}. \end{DoxyCompactList}\item 
+\Hypertarget{classZoneArrosage_a0934cb15341fc146107ac7142e8eef80}\label{classZoneArrosage_a0934cb15341fc146107ac7142e8eef80} 
+void {\bfseries Piloter} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classZoneArrosage_a9fc3fbb127b51d30dcc14964057bdc48}\label{classZoneArrosage_a9fc3fbb127b51d30dcc14964057bdc48} 
+\index{ZoneArrosage@{ZoneArrosage}!ZoneArrosage@{ZoneArrosage}}
+\index{ZoneArrosage@{ZoneArrosage}!ZoneArrosage@{ZoneArrosage}}
+\doxysubsubsection{\texorpdfstring{ZoneArrosage()}{ZoneArrosage()}}
+{\footnotesize\ttfamily Zone\+Arrosage\+::\+Zone\+Arrosage (\begin{DoxyParamCaption}\item[{int}]{\+\_\+num\+Zone,  }\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+commande\+Vanne,  }\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+sense\+AVanne,  }\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+sense\+BVanne,  }\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+broche\+Humidite }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{classZoneArrosage}{Zone\+Arrosage}. 
+
+Constructeur alternatif initialisant la zone à partir d\textquotesingle{}une chaîne de configuration.
+
+Initialise une zone d\textquotesingle{}arrosage spécifique avec sa vanne motorisée et son capteur d\textquotesingle{}humidité.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+num\+Zone} & Identifiant unique de la zone d\textquotesingle{}arrosage. \\
+\hline
+{\em \+\_\+commande\+Vanne} & Broche GPIO de commande (activation) de la vanne. \\
+\hline
+{\em \+\_\+sense\+AVanne} & Broche GPIO pour le sens d\textquotesingle{}ouverture de la vanne. \\
+\hline
+{\em \+\_\+sense\+BVanne} & Broche GPIO pour le sens de fermeture de la vanne. \\
+\hline
+{\em \+\_\+broche\+Humidite} & Broche analogique/numérique reliée au capteur d\textquotesingle{}humidité du sol.\\
+\hline
+\end{DoxyParams}
+Découpe une chaîne de caractères contenant les paramètres matériels séparés par des espaces pour configurer la zone, sa vanne et son capteur d\textquotesingle{}humidité.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+initialisation\+Zone} & Chaîne au format "{}num\+Zone commande\+Vanne sense\+AVanne sense\+BVanne broche\+Humidite"{} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+zonearrosage.\+h\item 
+zonearrosage.\+cpp\end{DoxyCompactItemize}

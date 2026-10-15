@@ -1,0 +1,26 @@
+\doxysection{zonearrosage.\+h}
+\hypertarget{zonearrosage_8h_source}{}\label{zonearrosage_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ZONEARROSAGE\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ZONEARROSAGE\_H}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}vanne.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}zonearrosage.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ gpio\_num\_t\ int}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classZoneArrosage}{ZoneArrosage}}}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{classVanne}{Vanne}}\ laVanne;}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{int}\ numZone;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classZoneArrosage}{ZoneArrosage}}(\textcolor{keywordtype}{int}\ \_numZone,}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ gpio\_num\_t\ \_commandeVanne,}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ gpio\_num\_t\ \_senseAVanne,}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ gpio\_num\_t\ \_senseBVanne,}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ gpio\_num\_t\ \_brocheHumidite);}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{void}\ Piloter();}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ZONEARROSAGE\_H}}
+
+\end{DoxyCode}

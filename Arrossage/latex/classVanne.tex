@@ -1,0 +1,64 @@
+\doxysection{Vanne Class Reference}
+\hypertarget{classVanne}{}\label{classVanne}\index{Vanne@{Vanne}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVanne_ac5f5dd2fe6a542cd49a3404a4209fcb9}{Vanne}} (const gpio\+\_\+num\+\_\+t \+\_\+broche\+Impulsion, const gpio\+\_\+num\+\_\+t \+\_\+sensA, const gpio\+\_\+num\+\_\+t \+\_\+sensB)
+\begin{DoxyCompactList}\small\item\em Constructeur de la classe \doxylink{classVanne}{Vanne}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVanne_abaf4f1253b0fb8016b86280017a5fd53}{Ouvrir}} ()
+\begin{DoxyCompactList}\small\item\em Commande l\textquotesingle{}ouverture complète de la vanne. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVanne_a009f9021ff1f44fa633eee3e8f42bd9f}{Fermer}} ()
+\begin{DoxyCompactList}\small\item\em Commande la fermeture complète de la vanne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classVanne_ac5f5dd2fe6a542cd49a3404a4209fcb9}\label{classVanne_ac5f5dd2fe6a542cd49a3404a4209fcb9} 
+\index{Vanne@{Vanne}!Vanne@{Vanne}}
+\index{Vanne@{Vanne}!Vanne@{Vanne}}
+\doxysubsubsection{\texorpdfstring{Vanne()}{Vanne()}}
+{\footnotesize\ttfamily Vanne\+::\+Vanne (\begin{DoxyParamCaption}\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+broche\+Impulsion,  }\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+sensA,  }\item[{const gpio\+\_\+num\+\_\+t}]{\+\_\+sensB }\end{DoxyParamCaption})}
+
+
+
+Constructeur de la classe \doxylink{classVanne}{Vanne}. 
+
+Initialise les broches GPIO requises pour le pilotage d\textquotesingle{}une vanne motorisée.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+broche\+Impulsion} & Broche GPIO envoyant le signal de commande d\textquotesingle{}activation. \\
+\hline
+{\em \+\_\+sensA} & Broche GPIO définissant le premier sens de rotation (Ouverture). \\
+\hline
+{\em \+\_\+sensB} & Broche GPIO définissant le second sens de rotation (Fermeture). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classVanne_a009f9021ff1f44fa633eee3e8f42bd9f}\label{classVanne_a009f9021ff1f44fa633eee3e8f42bd9f} 
+\index{Vanne@{Vanne}!Fermer@{Fermer}}
+\index{Fermer@{Fermer}!Vanne@{Vanne}}
+\doxysubsubsection{\texorpdfstring{Fermer()}{Fermer()}}
+{\footnotesize\ttfamily void Vanne\+::\+Fermer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Commande la fermeture complète de la vanne. 
+
+Active le moteur de la vanne dans le sens inverse pour stopper le flux d\textquotesingle{}eau. \Hypertarget{classVanne_abaf4f1253b0fb8016b86280017a5fd53}\label{classVanne_abaf4f1253b0fb8016b86280017a5fd53} 
+\index{Vanne@{Vanne}!Ouvrir@{Ouvrir}}
+\index{Ouvrir@{Ouvrir}!Vanne@{Vanne}}
+\doxysubsubsection{\texorpdfstring{Ouvrir()}{Ouvrir()}}
+{\footnotesize\ttfamily void Vanne\+::\+Ouvrir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Commande l\textquotesingle{}ouverture complète de la vanne. 
+
+Active le moteur de la vanne dans le sens défini par les broches GPIO pour libérer le passage de l\textquotesingle{}eau. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+vanne.\+h\item 
+\mbox{\hyperlink{vanne_8cpp}{vanne.\+cpp}}\end{DoxyCompactItemize}
